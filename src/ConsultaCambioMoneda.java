@@ -8,7 +8,7 @@ import java.net.http.HttpResponse;
 
 public class ConsultaCambioMoneda {
     public Cambio obtenerCambio(String monedaOrigen, String monedaDestino, String monto) throws IOException, InterruptedException {
-        URI direccion = URI.create("https://v6.exchangerate-api.com/v6/a9c0bd9f4708713129ee7206/pair/" + monedaOrigen + "/" + monedaDestino + "/" + monto);
+        URI direccion = URI.create("https://v6.exchangerate-api.com/v6/APIKEY/pair/" + monedaOrigen + "/" + monedaDestino + "/" + monto);
 
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
