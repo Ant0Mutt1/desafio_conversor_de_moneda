@@ -1,2 +1,2 @@
-public record Cambio(int conversion_result) {
+public record Cambio(float conversion_result) {
 }
