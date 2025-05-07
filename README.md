@@ -15,6 +15,7 @@
 * [🚧 Estado del proyecto](#estado-del-proyecto)
 * [🎯 Demostración de funciones y aplicaciones](#demostración-de-funciones-y-aplicaciones)
 * [📂 Acceso al Proyecto](#acceso-al-proyecto)
+* [🔑 Configuración de la API Key](#configuración-de-la-API-Key)
 * [🛠️ Tecnologías utilizadas](#tecnologías-utilizadas)
 * [🤝 Personas Contribuyentes](#personas-contribuyentes)
 * [📝 Licencia](#licencia)
@@ -91,7 +92,24 @@ java Main
 ```
 
 ---
+## 🔑 Configuración de la API Key
 
+Este proyecto depende de una API externa para obtener tasas de cambio. Para que funcione correctamente:
+
+    Regístrate en un proveedor de APIs de tipo de cambio, como:
+    https://www.exchangerate-api.com
+    o https://apilayer.com/marketplace/exchangerates_data-api
+
+    Obtén tu API Key.
+
+    Abre el archivo ConsultaCambioMoneda.java.
+
+    Reemplaza la parte de la URL que contiene la clave de API con la tuya propia. Por ejemplo:
+   ```bash
+      URI direccion = URI.create("https://v6.exchangerate-api.com/v6/APIKEY/pair/" + monedaOrigen + "/" + monedaDestino + "/" + monto);
+   ```
+⚠️ No compartas tu API Key públicamente.
+---
 ## 🛠️ Tecnologías utilizadas
 
 * Java 17+
